@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jwtsecurity
+    username: postgres
+    password: In4Tech@2022
+    driver-class-name: org.postgresql.Driver
+#  security:
+#    user:
+#      name: john
+#      password: Pass@word1
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties :
+      hibernate:
+        format-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8092
